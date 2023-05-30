@@ -16,5 +16,5 @@ plot_data_on_world_map <- function(data){
   world$plot <- world[, ncol(world)]
 
   ggplot()+geom_map(data = world,
-                    map = world, aes(long, lat, map_id = region, fill = plot))+theme_minimal()+coord_equal()+scale_fill_continuous(low ='white', high ='red')+ylab('')+xlab('')
+                    map = world, aes(long, lat, map_id = region, fill = plot))+theme_minimal()+coord_equal()+scale_fill_continuous(low ='gray95', high ='red')+ylab('')+xlab('')
 }
